@@ -1,0 +1,232 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Avenir Light", sans-serif;
+    background-color: #f8f8f8;
+    color: #000; /* Couleur du texte en noir */
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: transparent; /* Enlève le fond violet */
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif; /* Utilise la police Playfair Display */
+    font-weight: bold;
+    font-size: 45px; /* Taille 45px pour le nom */
+}
+
+.header p {
+    margin-bottom: 20px;
+    font-family: 'Avenir Light', sans-serif; /* Utilise la police Avenir Light */
+    font-size: 25px; /* Taille 25px pour le statut */
+    font-style: italic; /* Style italique */
+}
+
+.profile-photo {
+    max-width: 150px; /* Réduit la taille de la photo de 80% */
+    float: right; /* Aligne la photo à droite */
+    margin-top: -140px; /* Ajuste la position verticale de la photo */
+    margin-right: 100px; /* Ajoute un peu d'espace à droite de la photo */
+    border-radius: 50%; /* Pour arrondir la photo */
+}
+
+/* Navigation */
+nav {
+    background-color: transparent; /* Enlève le fond violet */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000; /* Couleur du texte en noir */
+    margin: 0; /* Enlève la marge pour éviter l'espacement */
+    transition: color 0.3s ease;
+    display: inline-block;
+    padding: 15px 30px; /* Augmente le padding pour plus d'espace à l'intérieur */
+    border-top: 1px solid #000; /* Ajoute une bordure en haut */
+    border-bottom: 1px solid #000; /* Ajoute une bordure en bas */
+    border-left: 1px solid #000; /* Ajoute une bordure à gauche */
+    border-right: 1px solid #000; /* Ajoute une bordure à droite */
+    margin-right: -5px; /* Enlève l'espacement entre les boutons */
+}
+
+nav a:hover {
+    color: #483D8B;
+    background-color: #f8f8f8; /* Change la couleur de fond au survol */
+}
+
+/* Pour centrer le texte */
+nav a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Main Content */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Footer */
+footer {
+    background-color: transparent; /* Enlève le fond violet */
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Social Icons */
+footer div {
+    margin-top: 10px;
+}
+
+footer div a {
+    color: #000;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Nouvelles règles pour les sections sous la bio */
+.bio-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #000; /* Ajoute une ligne en bas de chaque section */
+    padding-bottom: 20px; /* Ajoute un peu d'espace en bas de chaque section */
+}
+
+.bio-section#presentation .set-up-photo {
+    float: right; /* Fait flotter l'image à droite */
+    margin: 0 0 20px 20px; /* Marge autour de l'image (haut, droite, bas, gauche) */
+    max-width: 350px; /* Taille maximale de l'image */
+}
+
+.align-text {
+    float: left; /* Faites flotter l'image à gauche */
+    margin-right: 20px; /* Ajoute une marge à droite de l'image */
+    shape-outside: inset(10px); /* Définit la forme du contour de l'image */
+    width: 550px; /* Ajuste la largeur de l'image */
+}
+
+.bio-content {
+    font-size: 20px; /* Taille du texte dans les sections */
+}
+
+/* Style des titres de section */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Ajoute un peu d'espace en bas des titres */
+}
+
+/* Style du texte à l'intérieur des sections */
+p {
+    font-family: 'Avenir Light', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Ajoute un espace en bas de chaque paragraphe */
+}
+
+/* Style spécifique pour le texte en italique */
+em {
+    font-style: italic; /* Applique le style italic aux éléments <em> */
+}
+
+/* Style pour les sous-sections */
+.sub-section {
+    margin-bottom: 20px; /* Espacement entre les sous-sections */
+    font-family: 'Playfair Display', serif; /* Utilisation de la police Playfair Display */
+}
+
+.sub-section h3 {
+    font-size: 18px; /* Taille de police pour les titres de sous-section */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espacement sous les titres */
+}
+
+.bio-section ul {
+    padding-left: 20px; /* Espacement à gauche pour la liste */
+}
+
+.bio-section li {
+    font-family: 'Avenir Light', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Espacement entre chaque élément de la liste */
+}
+
+
+
+
+/* Nouvelles règles pour les logos */
+.profile-photo-container {
+    position: relative; /* Position relative pour les éléments à l'intérieur */
+    display: inline-block; /* Permet de contrôler la taille de l'ensemble */
+}
+
+.logos-container {
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    bottom: -50px; /* Ajuste la position verticale des logos par rapport à la photo */
+    left: 50%; /* Positionne les logos au centre horizontalement */
+    transform: translateX(-50%); /* Ajuste la position horizontale au centre */
+}
+
+/* Style spécifique pour chaque logo */
+.logo-ilcb {
+    width: 250px; /* Taille du logo ILCB */
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: -210px; /* Ajuste la position verticale du logo ILCB */
+    left: 45px; /* Ajuste la position horizontale du logo ILCB */
+}
+
+.logo-lis {
+    width: 100px; /* Taille du logo LIS */
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: -100px; /* Ajuste la position verticale du logo LIS */
+    left: 100px; /* Ajuste la position horizontale du logo LIS */
+}
+
+.logo-lpl {
+    width: 100px; /* Taille du logo LPL */
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: 0px; /* Ajuste la position verticale du logo LPL */
+    left: 100px; /* Ajuste la position horizontale du logo LPL */
+}
+
+.logo-amu {
+    width: 180px; /* Taille du logo LPL */
+    position: absolute; /* Position absolue par rapport au conteneur parent */
+    top: 100px; /* Ajuste la position verticale du logo LPL */
+    left: 50px; /* Ajuste la position horizontale du logo LPL */
+}
+
+/* Style pour les icônes */
+.social-icons i {
+    font-size: 24px; /* Taille des icônes */
+    margin-right: 10px; /* Espacement entre les icônes */
+}
+
+
+
+
+
+
+
