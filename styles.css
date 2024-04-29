@@ -226,6 +226,38 @@ em {
 
 
 
+/* Styles par défaut pour les appareils de petite taille (mobile) */
+@media only screen and (max-width: 600px) {
+    /* Ajoutez ici vos styles pour les appareils mobiles */
+    .header {
+        padding: 10px 0; /* Réduit l'espace dans l'en-tête */
+    }
+
+    .header h1 {
+        font-size: 30px; /* Réduit la taille de la police du titre */
+    }
+
+    .profile-photo {
+        max-width: 100px; /* Réduit la taille de la photo de profil */
+        margin-top: -120px; /* Ajuste la position verticale de la photo */
+        margin-right: 0; /* Supprime la marge à droite */
+    }
+
+    nav a {
+        padding: 10px 20px; /* Réduit le padding des liens dans la navigation */
+    }
+
+    .bio-section {
+        margin-top: 20px; /* Réduit l'espace en haut des sections */
+        margin-bottom: 20px; /* Réduit l'espace en bas des sections */
+    }
+
+    .bio-section#presentation .set-up-photo {
+        float: none; /* Annule le flottement de l'image */
+        margin: 0 auto 20px auto; /* Centre l'image horizontalement */
+        max-width: 100%; /* Ajuste la largeur de l'image */
+    }
+}
 
 
 
