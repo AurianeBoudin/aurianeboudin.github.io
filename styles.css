@@ -22,7 +22,7 @@ body {
 
 .header h1 {
     margin-bottom: 10px;
-    font-family: 'Playfair Display', serif; /* Utilise la police Playfair Display */
+    font-family: 'Avenir Light', sans-serif; /* Utilise la police Playfair Display */
     font-weight: bold;
     font-size: 45px; /* Taille 45px pour le nom */
 }
@@ -128,7 +128,7 @@ footer div a {
 
 /* Style des titres de section */
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Avenir Light', sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
@@ -152,7 +152,7 @@ em {
 /* Style pour les sous-sections */
 .sub-section {
     margin-bottom: 20px; /* Espacement entre les sous-sections */
-    font-family: 'Playfair Display', serif; /* Utilisation de la police Playfair Display */
+    font-family: 'Avenir Light', sans-serif; /* Utilisation de la police Playfair Display */
 }
 
 .sub-section h3 {
