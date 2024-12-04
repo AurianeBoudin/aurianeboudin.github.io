@@ -1,3 +1,18 @@
+/* Déclaration de la police */
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('Parkinsans/Parkinsans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('Parkinsans/Parkinsans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -6,7 +21,7 @@
 }
 
 body {
-    font-family: "Parkinsans", sans-serif;
+    font-family: 'Parkinsans', sans-serif;
     background-color: #f8f6fa;
     color: #000; /* Couleur du texte en noir */
     line-height: 1.6;
@@ -21,9 +36,9 @@ body {
 
 .header h1 {
     margin-bottom: 5px;
-    font-family: 'Parkinsans', sans-serif; /* Utilise la police Playfair Display */
+    font-family: 'Parkinsans', sans-serif; /* Utilise la police Parkinsans */
     font-weight: bold;
-    font-size: 40px; /* Taille 45px pour le nom */
+    font-size: 40px; /* Taille 40px pour le nom */
 }
 
 .header p {
@@ -33,7 +48,7 @@ body {
 }
 
 .profile-photo {
-    max-width: 150px; /* Réduit la taille de la photo de 80% */
+    max-width: 150px; /* Réduit la taille de la photo */
     float: right; /* Aligne la photo à droite */
     margin-top: -140px; /* Ajuste la position verticale de la photo */
     margin-right: 100px; /* Ajoute un peu d'espace à droite de la photo */
@@ -42,7 +57,7 @@ body {
 
 /* Navigation */
 nav {
-    background-color: transparent; /* Enlève le fond violet */
+    background-color: transparent; /* Enlève le fond */
     padding: 10px 0;
     text-align: center;
 }
@@ -54,10 +69,10 @@ nav a {
     transition: color 0.3s ease;
     display: inline-block;
     padding: 15px 30px; /* Augmente le padding pour plus d'espace à l'intérieur */
-    border-top: 4px outset   #ad85db; /* Ajoute une bordure en haut */
-    border-bottom: 4px outset   #ad85db; /* Ajoute une bordure en bas */
-    border-left: 4px outset   #ad85db; /* Ajoute une bordure à gauche */
-    border-right: 4px outset   #ad85db; /* Ajoute une bordure à droite */
+    border-top: 4px outset #ad85db; /* Bordure en haut */
+    border-bottom: 4px outset #ad85db; /* Bordure en bas */
+    border-left: 4px outset #ad85db; /* Bordure à gauche */
+    border-right: 4px outset #ad85db; /* Bordure à droite */
     margin-right: -2px; /* Enlève l'espacement entre les boutons */
 }
 
@@ -93,7 +108,7 @@ footer div a {
     font-size: 20px;
 }
 
-
+/* Bio Section */
 .bio-section {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -103,7 +118,7 @@ footer div a {
 
 .bio-section#presentation .set-up-photo {
     float: right; /* Fait flotter l'image à droite */
-    margin: 0 0 20px 20px; /* Marge autour de l'image (haut, droite, bas, gauche) */
+    margin: 0 0 20px 20px; /* Marge autour de l'image */
     max-width: 280px; /* Taille maximale de l'image */
 }
 
@@ -145,7 +160,7 @@ em {
 /* Style pour les sous-sections */
 .sub-section {
     margin-bottom: 20px; /* Espacement entre les sous-sections */
-    font-family: 'Parkinsans', sans-serif; /* Utilisation de la police Playfair Display */
+    font-family: 'Parkinsans', sans-serif;
 }
 
 .sub-section h3 {
@@ -166,6 +181,3 @@ em {
     line-height: 1.3;
     margin-bottom: 25px; /* Espacement entre chaque élément de la liste */
 }
-
-
-
