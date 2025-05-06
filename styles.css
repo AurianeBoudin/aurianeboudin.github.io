@@ -1,183 +1,185 @@
-/* Déclaration de la police */
-@font-face {
-    font-family: 'Parkinsans';
-    src: url('Parkinsans/Parkinsans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Parkinsans';
-    src: url('Parkinsans/Parkinsans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* Reset CSS */
-* {
-    box-sizing: border-box;
+/* Importation de la police moderne */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    color: #2c2c2c;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Parkinsans', sans-serif;
-    background-color: #f8f6fa;
-    color: #000; /* Couleur du texte en noir */
     line-height: 1.6;
 }
 
-/* Header */
-.header {
-    color: #000;
-    padding: 10px 0;
-    text-align: center;
+/* Conteneur centralisé avec largeur maximale */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.header h1 {
-    margin-bottom: 5px;
-    font-family: 'Parkinsans', sans-serif; /* Utilise la police Parkinsans */
-    font-weight: bold;
-    font-size: 40px; /* Taille 40px pour le nom */
+/* En-tête avec dégradé et texte centré */
+.header {
+    text-align: center;
+    padding: 20px 0 10px;
+    background: linear-gradient(135deg, #c3aed6, #fbc7d4);
+    color: white;
 }
+
+/* Titre */
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 0.5; /* Réduit l'espace entre les lignes du titre */
+}
+
+/* Adresse e-mail sous le nom */
+.header .email {
+    font-size: 1.1em;
+    margin-top: 5px;
+    color: #fefefe;
+    font-weight: 400;
+    line-height: 0.3; /* Réduit l'espace entre les lignes de l'email */
+}
+
 
 .header p {
-    margin-bottom: 5px;
-    font-family: 'Parkinsans', sans-serif; /* Utilise la police Parkinsans */
-    font-size: 25px; /* Taille 25px pour le statut */
+    font-size: 1.3em;
+    font-weight: 300;
 }
 
+/* Première photo de profil encore plus grande, centrée et stylisée */
 .profile-photo {
-    max-width: 150px; /* Réduit la taille de la photo */
-    float: right; /* Aligne la photo à droite */
-    margin-top: -140px; /* Ajuste la position verticale de la photo */
-    margin-right: 100px; /* Ajoute un peu d'espace à droite de la photo */
-    border-radius: 50%; /* Pour arrondir la photo */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
 }
 
-/* Navigation */
-nav {
-    background-color: transparent; /* Enlève le fond */
-    padding: 10px 0;
-    text-align: center;
+/* Barre de navigation stylisée et centrée */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    padding: 20px 0;
+    gap: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav a {
+/* Boutons avec couleurs douces et cohérentes avec le style du site */
+.nav a {
     text-decoration: none;
-    color: #000; /* Couleur du texte en noir */
-    margin: 0; /* Enlève la marge pour éviter l'espacement */
-    transition: color 0.3s ease;
-    display: inline-block;
-    padding: 15px 30px; /* Augmente le padding pour plus d'espace à l'intérieur */
-    border-top: 4px outset #ad85db; /* Bordure en haut */
-    border-bottom: 4px outset #ad85db; /* Bordure en bas */
-    border-left: 4px outset #ad85db; /* Bordure à gauche */
-    border-right: 4px outset #ad85db; /* Bordure à droite */
-    margin-right: -2px; /* Enlève l'espacement entre les boutons */
+    color: white;
+    background-color: #c3aed6;  /* Violet doux */
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Pour centrer le texte */
-nav a span {
-    display: inline-block;
-    vertical-align: middle;
+/* Effet au survol (couleur un peu plus foncée et échelle de transformation) */
+.nav a:hover {
+    background-color: #c3aed6;  /* Violet légèrement plus foncé */
+    transform: scale(1.07);
 }
 
-/* Main Content */
-.container {
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
 
-/* Footer */
-footer {
-    color: #000;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Social Icons */
-footer div {
-    margin-top: 5px;
-}
-
-footer div a {
-    color: #000;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/* Bio Section */
+/* Sections principales avec bordure en bas */
 .bio-section {
     margin-top: 40px;
-    margin-bottom: 40px;
-    border-bottom: 5px solid #ad85db; /* Bande entre chaque section */
-    padding-bottom: 15px; /* Ajoute un peu d'espace en bas de chaque section */
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e5d1fa;
 }
 
-.bio-section#presentation .set-up-photo {
-    float: right; /* Fait flotter l'image à droite */
-    margin: 0 0 20px 20px; /* Marge autour de l'image */
-    max-width: 280px; /* Taille maximale de l'image */
-}
-
-.align-text {
-    float: left; 
-    margin-right: 20px; /* Ajoute une marge à droite de l'image */
-    shape-outside: inset(10px); /* Définit la forme du contour de l'image */
-    width: 550px; /* Ajuste la largeur de l'image */
-}
-
-.bio-content {
-    font-size: 20px; /* Taille du texte dans les sections */
-}
-
-/* Style des titres de section */
-h2 {
-    font-family: 'Parkinsans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.15em;
+.bio-section h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #7209b7;
     text-transform: uppercase;
-    margin-bottom: 10px; /* Ajoute un peu d'espace en bas des titres */
 }
 
-/* Style du texte à l'intérieur des sections */
-p {
-    font-family: 'Parkinsans', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    line-height: 1.4;
-    margin-bottom: 15px; /* Ajoute un espace en bas de chaque paragraphe */
+/* Présentation avec image très petite déplacée à la fin */
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Style spécifique pour le texte en italique */
-em {
-    font-style: italic; /* Applique le style italic aux éléments <em> */
+.bio-content p {
+    font-size: 1.1em;
+    order: 1;
 }
 
-/* Style pour les sous-sections */
+/* Sous-sections type expériences */
 .sub-section {
-    margin-bottom: 20px; /* Espacement entre les sous-sections */
-    font-family: 'Parkinsans', sans-serif;
+    font-size: 1em;
+    margin-bottom: 20px;
 }
 
-.sub-section h3 {
-    font-size: 18px; /* Taille de police pour les titres de sous-section */
-    font-weight: bold;
-    margin-bottom: 5px; /* Espacement sous les titres */
-    letter-spacing: 0.12em;
+/* Liste de compétences */
+ul {
+    padding-left: 20px;
+    list-style: disc;
 }
 
-.bio-section ul {
-    padding-left: 30px; /* Espacement à gauche pour la liste */
+/* Pied de page avec couleur cohérente */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f3e8ff;
+    font-size: 0.9em;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    color: #5a189a;
 }
 
-.bio-section li {
-    font-family: 'Parkinsans', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    line-height: 1.3;
-    margin-bottom: 25px; /* Espacement entre chaque élément de la liste */
+footer a {
+    color: #5a189a;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #2c2c2c;
+}
+
+/* Responsive : mobile-friendly */
+@media (max-width: 768px) {
+    .bio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        margin: 6px auto;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .bio-section {
+        padding: 10px 0;
+    }
+
+    .bio-content img.set-up-photo {
+        align-self: center;
+    }
 }
