@@ -1,6 +1,6 @@
 /* Importation de la police moderne */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Parkinsans', sans-serif;
     background-color: #fefefe;
     color: #2c2c2c;
     margin: 0;
@@ -65,7 +65,7 @@ body {
     background-color: transparent;
     padding: 20px 0;
     gap: 12px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Parkinsans', sans-serif;
 }
 
 /* Boutons avec couleurs douces et cohérentes avec le style du site */
@@ -78,7 +78,7 @@ body {
     font-weight: 500;
     font-size: 1em;
     transition: all 0.3s ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Parkinsans', sans-serif;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
