@@ -88,6 +88,53 @@ body {
     transform: scale(1.07);
 }
 
+/* Style général pour les onglets */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;  /* Espace ajouté au-dessus des boutons */
+}
+
+/* Boutons d'onglets */
+.tablink {
+    padding: 12px 24px;
+    background-color: #f7f7f7;
+    color: #333;
+    border: 2px solid #ccc;  /* Bordure gris clair pour tous les onglets */
+    border-radius: 30px;
+    font-family: 'Parkinsans', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Onglet actif (lorsqu'il est sélectionné) */
+.tablink.active {
+    background-color: #c3aed6;
+    color: white;
+    border-color: #c3aed6;  /* La même couleur que l'arrière-plan pour l'onglet actif */
+    transform: scale(1.05);  /* Légère agrandissement au clic */
+}
+
+/* Effet au survol des onglets */
+.tablink:hover {
+    background-color: #e1d9f2;
+    transform: scale(1.05);
+}
+
+/* Contenu des onglets (initialement masqué) */
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Contenu actif de l'onglet */
+.tabcontent.active {
+    display: block;
+}
 
 /* Sections principales avec bordure en bas */
 .bio-section {

@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<link rel="stylesheet" href="styles.css">
-
 <body>
     <div class="header">
         <h1>Auriane Boudin</h1>
@@ -22,14 +20,15 @@
 
 
 
-    <nav class="nav">
-        <a href="#bio"><span>Presentation</span></a>
-        <a href="#education"><span>Education</span></a>
-        <a href="#publications"><span>Publications</span></a>
-        <a href="#teaching"><span>Teaching</span></a>
-        <a href="#participation"><span>Participation</span></a>
-        <a href="#supervisions"><span>Supervisions</span></a>
-    </nav>
+    <div class="tabs">
+        <button class="tablink active" onclick="openTab(event, 'presentation')">Presentation</button>
+        <button class="tablink" onclick="openTab(event, 'education')">Education</button>
+        <button class="tablink" onclick="openTab(event, 'publications')">Publications</button>
+        <button class="tablink" onclick="openTab(event, 'teaching')">Teaching</button>
+        <button class="tablink" onclick="openTab(event, 'supervisions')">Supervisions</button>
+    </div>
+    
+      
 
     <div class="container">
         <!-- Menu -->
@@ -37,11 +36,11 @@
 
         </div>
 
-        <div class="bio-section" id="presentation">
+        <div class="bio-section tabcontent" id="presentation">
             <h2>Presentation</h2>
             <p>I hold a PhD in Linguistics, specializing in Computer Science, from Aix-Marseille Université. 
                 My doctoral research was supervised by Pr. Philippe Blache, Pr. Magalie Ochs, Pr. Roxane Bertrand, and Dr. Stéphane Rauzy. 
-                I also collaborated with Dr. Louis-Philippe Morency during a research stay at Carnegie Mellon University. 
+                I also collaborated with Pr. Louis-Philippe Morency during a research stay at Carnegie Mellon University. 
                 I was funded by the <a href="https://www.ilcb.fr/">ILCB</a> and affiliated with both the 
                 <a href="https://www.lpl-aix.fr/">Laboratoire Parole et Langage</a> and 
                 the <a href="https://www.lis-lab.fr/">Laboratoire d'Informatique et Systèmes</a>. 
@@ -63,7 +62,7 @@
         <p>I would be delighted to connect with anyone interested in discussing my research or exploring collaboration opportunities. Please don't hesitate to reach out to me at <strong>auriane.boudin@univ-amu.fr</strong></p>
     </div>
 
-    <div class="bio-section" id="education">
+    <div class="bio-section tabcontent" id="education">
             <h2>Experience & Education</h2>
             <div class="sub-section">
 
@@ -108,7 +107,7 @@
         </div>
         
     
-        <div class="bio-section" id="publications">
+        <div class="bio-section tabcontent" id="publications">
             <h2>Publications</h2>
 
                 <h3>Journal</h3>
@@ -136,7 +135,7 @@
 
                     <p>2. Silem, O., Fleig, M. A., Blache, P., <strong>Boudin, A.</strong>, Oufaida, H., & Becerra-Bonache, L. (In press). 
                         <i>Exploring neural correlates of predictability in natural conversation: Adapting large language models for spoken dialogue. </i>
-                        Submitted at CogSci 2025.</p>
+                        </p>
 
                     <p>3. Kebe, G. Y., Birlikci, M. D., <strong>Boudin, A.</strong>, A., Ishii, R., Girard, J. M., & Morency, LP. (2024) <i>GeSTICS: 
                         A Multimodal Corpus for Studying Gesture Synthesis in Two-party Interactions with Contextualized Speech</i>. 
@@ -155,25 +154,25 @@
                         In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024) 
                         (pp. 15872-15887).</p>
 
-                    <p>6. <strong>Boudin, A.</strong>, Bertrand, R., Rauzy, S., Houlès, M., Legou, T., Ochs, M., & Blache, P. (2023, October). <i></i>SMYLE : 
+                    <p>6. <strong>Boudin, A.</strong>, Bertrand, R., Rauzy, S., Houlès, M., Legou, T., Ochs, M., & Blache, P. (2023). <i></i>SMYLE : 
                         A new multimodal resource of talk-in-interaction including neuro-physiological signal</i>. In Companion Publication of the 25th International 
                         Conference on Multimodal Interaction (pp. 344-352). (<a href="https://amu.hal.science/hal-04195031/">access</a>)</p>
                     
                     <p>7. <strong>Boudin, A.</strong>, Bertrand, R., Ochs, M., Blache, P., & Rauzy, S. (2022). <i>Are you Smiling When I am Speaking ?</i>. In Proceedings of the Smiling and Laughter across Contexts and the Life-span Workshop@ LREC2022. (<a href="https://hal.science/hal-03713867/">access</a>)</p>
                     
-                    <p>8. <strong>Boudin, A.</strong>, (2022). <i>Interdisciplinary corpus-based approach for exploring multimodal conversational feedback</i>. In Proceedings of the 2022 International Conference on Multimodal Interaction (pp. 705-710). (<a href="https://dl.acm.org/doi/abs/10.1145/3536221.3557029">access</a>)</p>
+                    <p>8. <strong>Boudin, A.</strong> (2022). <i>Interdisciplinary corpus-based approach for exploring multimodal conversational feedback</i>. In Proceedings of the 2022 International Conference on Multimodal Interaction (pp. 705-710). (<a href="https://dl.acm.org/doi/abs/10.1145/3536221.3557029">access</a>)</p>
                     
                     <p>9. <strong>Boudin, A.</strong>, Bertrand, R., Rauzy, S., Ochs, M., & Blache, P. (2021). <i>A multimodal model for predicting conversational feedbacks</i>. In International conference on text, speech, and dialogue (pp. 537-549). Springer, Cham. (<a href="https://hal.science/hal-03331446v2/document">access</a>)</p>
                 </ul>
 
                 <h3>PhD Manucript</h3>
                 <ul>
-                    <strong>Boudin, A.</strong>,  <i>Exploring Conversation Through Feedback: A cross-disciplinary approach. </i>
+                    <strong>Boudin, A.</strong> (2024).  <i>Exploring Conversation Through Feedback: A cross-disciplinary approach. </i>
                         (<a href="https://hal.science/tel-04969570">access</a>)
                 </ul>
             </div>
     
-        <div class="bio-section" id="teaching">
+            <div class="bio-section tabcontent" id="teaching">
             <h2>Teaching</h2>
             <ul>
                 <li> <strong>Systems and Dialog</strong> (16h) - Second year of Master’s Degree in Cognitive Sciences, Aix-en-Provence, France.</li>
@@ -185,7 +184,7 @@
         </div>
     
         
-        <div class="bio-section" id="participation">
+        <!-- <div class="bio-section" id="participation">
             <h2>Participation</h2>
             
             <div class="sub-section">
@@ -226,9 +225,9 @@
                 <li>Scientific Mediation: Perception, Representation, and Interpretation in Aix-en-Provence, France. Date: 12 April 2019.</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
-        <div class="bio-section" id="supervisions">
+        <div class="bio-section tabcontent" id="supervisions">
             <h2>Supervisions</h2>
         
             <div class="sub-section">
@@ -273,6 +272,24 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+          const tablinks = document.querySelectorAll(".tablink");
+          const tabcontents = document.querySelectorAll(".tabcontent");
+        
+          tablinks.forEach(link => link.classList.remove("active"));
+          tabcontents.forEach(content => content.classList.remove("active"));
+        
+          document.getElementById(tabName).classList.add("active");
+          evt.currentTarget.classList.add("active");
+        }
+        
+        // Afficher le premier onglet au chargement
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelector(".tablink").click();
+        });
+    </script>
     
 </body>
 
