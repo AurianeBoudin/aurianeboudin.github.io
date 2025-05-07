@@ -96,45 +96,64 @@ body {
     margin-top: 20px;  /* Espace ajouté au-dessus des boutons */
 }
 
+/* Container des onglets */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;           /* Permet aux boutons de passer à la ligne */
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding: 0 10px;           /* Un peu de marge intérieure sur petits écrans */
+}
+
 /* Boutons d'onglets */
 .tablink {
-    padding: 12px 24px;
+    padding: 10px 20px;
     background-color: #f7f7f7;
     color: #333;
-    border: 2px solid #ccc;  /* Bordure gris clair pour tous les onglets */
+    border: 2px solid #ccc;
     border-radius: 30px;
     font-family: 'Parkinsans', sans-serif;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;            /* Empêche les boutons de se rétrécir */
 }
 
-/* Onglet actif (lorsqu'il est sélectionné) */
+/* Onglet actif */
 .tablink.active {
     background-color: #c3aed6;
     color: white;
-    border-color: #c3aed6;  /* La même couleur que l'arrière-plan pour l'onglet actif */
-    transform: scale(1.05);  /* Légère agrandissement au clic */
+    border-color: #c3aed6;
+    transform: scale(1.05);
 }
 
-/* Effet au survol des onglets */
+/* Effet hover */
 .tablink:hover {
     background-color: #e1d9f2;
     transform: scale(1.05);
 }
 
-/* Contenu des onglets (initialement masqué) */
+/* Contenu des onglets */
 .tabcontent {
     display: none;
     padding: 20px;
 }
 
-/* Contenu actif de l'onglet */
 .tabcontent.active {
     display: block;
 }
+
+/* Responsive : réduit la taille des boutons sur petits écrans */
+@media (max-width: 600px) {
+    .tablink {
+        font-size: 0.9em;
+        padding: 8px 14px;
+    }
+}
+
 
 /* Sections principales avec bordure en bas */
 .bio-section {
